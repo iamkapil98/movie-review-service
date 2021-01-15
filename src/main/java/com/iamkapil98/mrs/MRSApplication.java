@@ -11,7 +11,7 @@ public class MRSApplication {
         //add moview
         mrs.addMovie("Don", 2006, "Action", "Comedy");
         mrs.addMovie("Tiger", 2021, "Drama");
-        mrs.addMovie("Padmaavat", 2022, "Comedy");
+        mrs.addMovie("Padmaavat", 2011, "Comedy");
 
         //Add users
         mrs.addUser("SRK");
@@ -20,11 +20,13 @@ public class MRSApplication {
 
         //Add review
         mrs.addReviews("SRK", "Don", 2);
-        mrs.addReviews("SRK", "Padmavaat", 8);
+        mrs.addReviews("SRK", "Padmaavat", 8);
         mrs.addReviews("Salman", "Don", 5);
         mrs.addReviews("Deepika", "Don", 9);
         mrs.addReviews("SRK", "Tiger", 5);
         mrs.addReviews("SRK", "Tiger", 5);
+
+        mrs.findMoviesByYear(2006);
 
     }
 }

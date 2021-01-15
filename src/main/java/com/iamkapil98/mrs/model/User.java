@@ -1,5 +1,7 @@
 package main.java.com.iamkapil98.mrs.model;
 
+import main.java.com.iamkapil98.mrs.enums.UserRoles;
+
 public class User {
 
     private String name;
@@ -8,7 +10,7 @@ public class User {
 
     public User(String name) {
         this.name = name;
-        this.role = "User";
+        this.role = UserRoles.VIEWER.name();
         this.reviews = 0;
     }
 
@@ -24,8 +26,8 @@ public class User {
         return role;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setRole(UserRoles role) {
+        this.role = role.name();
     }
 
     public int getReviews() {
